@@ -1,0 +1,28 @@
+.clients-section {
+  background: #f6f6f6;
+}
+
+.clients-header {
+  padding-bottom: 35px;
+  p {
+    @include font-century(1rem);
+    color: #424147;
+  }
+}
+
+.clients-slider {
+  padding-bottom: 115px;
+  li {
+    width: 140px;
+    margin: 0 40px;
+  }
+  .lSSlideOuter .lSPager.lSpg > li {
+    display: none;
+  }
+  .lSAction > a {
+    width: 46px;
+    display: block;
+    top: 13%;
+    height: 90px;
+  }
+}

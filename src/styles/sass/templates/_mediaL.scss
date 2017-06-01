@@ -1,0 +1,27 @@
+@media (min-width: 1200px) and (max-width: 1399px) {
+  html {
+    font-size: 15px;
+  }
+  .slider-text h2 {
+    font-size: 3.5rem;
+  }
+  .slider-img-wrap .photo-list li {
+    width: 160px;
+  }
+
+  .contact-list li {
+    padding: 0 0 25px 40px;
+  }
+  .main-footer .footer-nav-wrap .nav-list li {
+    padding: 0 15px;
+  }
+  .footer-wrap .ft-blocks {
+    padding: 20px 0 25px 60px;
+  }
+  .main-footer .footer-nav-wrap {
+    padding: 25px 60px;
+  }
+  .contact-list li .second-number {
+    padding-left: 39px;
+  }
+}

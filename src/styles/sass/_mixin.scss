@@ -1,0 +1,13 @@
+@mixin font-code ($size) {
+  font:$size "Code",sans-serif;
+}
+@mixin font-century ($size) {
+  font:$size "Century",sans-serif;
+}
+@mixin background-mix($url,$size) {
+  background:#f6f6f6 $url 50% 50% no-repeat;
+  background-size:$size;
+}
+
+
+

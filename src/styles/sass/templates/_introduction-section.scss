@@ -1,0 +1,89 @@
+.introduction-section {
+  background-color: #f6f6f6;
+}
+
+.bg-intro {
+  @include background-mix(url('../../images/slider-bg.jpg'), cover);
+}
+
+.slider-wrap {
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(center);
+  min-height: 100vh;
+  padding: 20px 10px 75px;
+}
+
+.slider-text {
+  text-align: left;
+  @include transform(translateX(12%));
+  h2 {
+    @include font-century(4.1rem);
+    text-transform: uppercase;
+    color: $colorBlack;
+    span {
+      background: #ffea00;
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 10px;
+    }
+  }
+  p {
+    @include font-century(1.5rem);
+    span {
+      background: #3f3f44;
+      display: inline-block;
+      margin-bottom: 1px;
+      padding: 5px;
+      color: $colorWhite;
+    }
+  }
+  .btn-wrap {
+    text-align: right;
+    padding: 60px 150px 0 0;
+  }
+}
+
+.slider-img-wrap {
+  @include display-flex();
+  padding-top: 40px;
+  .photo-list {
+    width: calc(100% / 4);
+    li {
+      width: 175px;
+      height: 151px;
+    }
+  }
+}
+
+.lSAction > a {
+  height: 100px;
+}
+
+.lSAction > .lSNext {
+  background: #000 url('../../images/right-arrow.png') 50% no-repeat;
+  right: 10px;
+}
+
+.lSAction > .lSPrev {
+  background: #000 url('../../images/left-arrow.png') 50% no-repeat;
+  right: 10px;
+}
+
+.lSSlideOuter .lSPager.lSpg {
+  margin: 10px 0 20px;
+}
+
+.lSSlideOuter .lSPager.lSpg > li a {
+  background-color: #414146;
+  border-radius: 0;
+  height: 26px;
+  width: 26px;
+}
+
+.lSSlideOuter .lSPager.lSpg > li.active a, .lSSlideOuter .lSPager.lSpg > li:hover a {
+  background-color: #ffea00;
+  height: 26px;
+  width: 26px;
+  border: 3px solid #414146;
+}

@@ -1,0 +1,44 @@
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 1140px;
+  }
+  html {
+    font-size: 14px;
+  }
+  .slider-text h2 {
+    font-size: 3rem;
+  }
+  .slider-img-wrap .photo-list li {
+    width: 140px;
+    height: 130px;
+  }
+  .content-list {
+    @include flex-wrap(wrap);
+  }
+  .content-list li {
+    margin: 0 10px 15px;
+  }
+  .clients-slider .lSAction > a {
+    width: 40px;
+    top: 25%;
+    height: 60px;
+  }
+  .main-footer .footer-nav-wrap .nav-list li {
+    padding: 0 10px;
+  }
+  .footer-wrap .ft-blocks {
+    padding: 20px 0 25px 40px;
+  }
+  .main-footer .footer-nav-wrap {
+    padding: 25px 40px;
+  }
+  .contact-list {
+    padding-right: 40px;
+  }
+  .contact-list li {
+    padding: 0 0 20px 40px;
+  }
+  .contact-list li .second-number {
+    padding-left: 27px;
+  }
+}

@@ -1,0 +1,123 @@
+.content-section {
+  background: #f6f6f6;
+}
+
+.content-header {
+  padding: 85px 0 65px;
+  color: $colorDarkGray;
+  h2 {
+    @include font-century(2.2rem);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+  }
+  p {
+    @include font-century(1.5rem);
+  }
+}
+
+.content-list {
+  @include display-flex();
+  @include justify-content(space-around);
+  padding-bottom: 90px;
+  li {
+    margin: 0 20px 15px;
+    height: 285px;
+    width: 250px;
+    position: relative;
+  }
+  .hover-block {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    .content-img-wrap {
+      min-height: 70%;
+    }
+    .hover-text {
+      background: $colorDarkGray;
+      @include display-flex();
+      @include flex-direction(column);
+      @include align-items(center);
+      @include justify-content(center);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      &:after {
+        content: " ";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: 82px;
+        border-width: 17px;
+        border-style: solid;
+        border-color: transparent transparent #424147 transparent;
+      }
+      p {
+        color: $colorWhite;
+        &:first-child {
+          @include font-code(1.25rem);
+          text-align: left;
+          padding-left: 20px;
+        }
+        &:last-child {
+          @include align-self(flex-end);
+          padding-right: 20px;
+          @include font-century(.63rem);
+          span {
+            color: #ffea00;;
+          }
+        }
+      }
+    }
+  }
+  .content-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #ffeb00;
+    h3 {
+      @include font-code(1.25rem);
+      text-transform: uppercase;
+      color: $colorBlack;
+      &:before {
+        content: '';
+        display: block;
+        width: 110px;
+        height: 110px;
+        margin: 30px auto;
+      }
+    }
+    p {
+      @include display-flex();
+      @include font-century(.82rem);
+      @include align-items(center);
+      @include justify-content(center);
+      color: $colorWhite;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 30%;
+      background: #3f3f44;
+    }
+  }
+}
+
+@for $i from 0 to 4 {
+  $step: 35.5%;
+  .content-list {
+    li:nth-child(#{$i+1}) h3:before {
+      background: url('../../images/sprite2.png') no-repeat ($step * $i) 0;
+    }
+  }
+}
+
+
+
+

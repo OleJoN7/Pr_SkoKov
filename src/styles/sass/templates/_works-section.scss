@@ -1,0 +1,22 @@
+.works-section {
+  background: #f6f6f6;
+}
+
+.works-header {
+  padding-bottom: 45px;
+  p {
+    @include font-century(1rem);
+    color: #424147;
+  }
+}
+
+.masonry-container {
+  overflow: hidden;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  .item {
+    float: left;
+    padding: 2px;
+  }
+}
+

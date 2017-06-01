@@ -1,0 +1,159 @@
+.footer-wrap {
+  background: $colorDarkGray;
+  background-size: cover;
+  .ft-blocks {
+    width: calc(100% / 3);
+    text-align: left;
+    padding: 20px 0 25px 110px;
+    color: $colorWhite;
+    h5 {
+      @include font-century(1.13rem);
+      padding-bottom: 25px;
+    }
+    p {
+      @include font-century(.81rem);
+    }
+  }
+}
+
+.about-block {
+  p {
+    @include font-century(.81rem);
+    padding-bottom: 30px;
+  }
+}
+
+.stream-list {
+  flex-wrap: wrap;
+  li {
+    width: calc(100% / 3);
+    padding: 5px 5px 0 0;
+  }
+}
+
+.tweet-block .tweet-list {
+  li {
+    padding-bottom: 15px;
+    padding-left: 50px;
+    background: url('../../images/twitter-icon.png') 0 40% no-repeat;
+  }
+  p {
+    line-height: 21px;
+    span {
+      color: #ffea00;
+    }
+    &:last-child {
+      @include font-century(.5rem);
+    }
+  }
+}
+
+.social-block h5 {
+  padding-right: 10px;
+  @include flex(1 0 auto);
+}
+
+.social-list {
+  z-index: 999;
+  li {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0 2px;
+    a {
+      display: block;
+      text-indent: -9999px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+@for $i from 0 through 8 {
+  $step: 11%;
+  .social-list {
+    li:nth-child(#{$i+1}) {
+      background: url('../../images/sprite.png') no-repeat ($step * $i) 0;
+    }
+  }
+}
+
+.contact-list {
+  padding-right: 110px;
+  li {
+    padding: 0 0 45px 40px;
+    .second-number {
+      padding-left: 48px;
+    }
+  }
+  .address {
+    background: url('../../images/adress.png') no-repeat 0 top;
+  }
+  .phone {
+    background: url('../../images/phone.png') no-repeat 0 top;
+  }
+  .email {
+    background: url('../../images/email.png') no-repeat 0 top;
+  }
+  p {
+    span {
+      color: #ffea00;
+    }
+  }
+}
+
+.follow-block {
+  form {
+    padding-top: 15px;
+  }
+  .submit-btn {
+    border: none;
+    background: transparent url('../../images/email-icon.png') no-repeat center;
+    width: 28px;
+    height: 28px;
+  }
+  input[type='email'] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ffea00;
+    min-width: 232px;
+    line-height: 18px;
+    color: #fff;
+    padding-left: 5px;
+    @include transition(.5s ease-in-out);
+    &:focus {
+      @include transform(translateX(-10px) scaleY(1.1));
+      border: 1px solid #2aabd2;
+      transition: .5s ease-in-out;
+      box-shadow: 0 0 9px 2px #2aabd2;
+    }
+  }
+}
+
+.main-footer .footer-nav-wrap {
+  padding: 25px 120px;
+  background: $colorBlack;
+  @include align-items(center);
+  @include justify-content(space-between);
+  p {
+    text-align: left;
+    color: $colorWhite;
+    @include font-century(.9rem);
+  }
+  .nav-list {
+    @include font-code(1rem);
+    li {
+      margin: 0 15px;
+      padding: 0 20px;
+      line-height: 32px;
+      @include transition(.3s linear);
+      &:hover a {
+        color: $colorBlack;
+        @include transition(.3s linear);
+      }
+      a {
+        color: $colorWhite;
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font: 12px Tahoma, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+div, menu, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, legend, label, select, input, textarea, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  padding: 0
+}
+
+textarea {
+  vertical-align: top;
+}
+
+input[type=submit] {
+  cursor: pointer;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+img {
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+main {
+  padding: 15px;
+  @include display-flex();
+  @include flex-direction(column);
+  height: 100%;
+  .content {
+    @include flex(1 0 auto);
+  }
+  .main-footer {
+    @include flex(0 0 auto);
+  }
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.container {
+  width: 1400px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #f6f6f6;
+}
+
+h4 {
+  @include font-century(1.13rem);
+  color: #ffea00;
+  padding: 10px 30px;
+  background: #424147;
+  display: inline-block;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 30px;
+}

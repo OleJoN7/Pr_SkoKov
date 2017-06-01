@@ -1,0 +1,65 @@
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 960px;
+  }
+  html {
+    font-size: 14px;
+  }
+  .slider-text h2 {
+    font-size: 2.3rem;
+  }
+  .slider-text p {
+    font-size: 1.3rem;
+  }
+  .content-list {
+    @include display-flex();
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+    padding-bottom: 60px;
+  }
+  .navbar-toggler {
+    font-size: 3rem;
+  }
+  .navbar-toggler-right {
+    top: 2rem;
+  }
+  .main-header .main-nav {
+    padding-top: 10px;
+  }
+  .slider-img-wrap .photo-list li {
+    width: 110px;
+    height: 110px;
+  }
+  .content-list .hover-block .hover-text:after {
+    margin-left: 70px;
+    border-width: 10px;
+  }
+
+  .clients-slider .lSAction > a {
+    width: 40px;
+    top: 25%;
+    height: 60px;
+  }
+  .main-footer .footer-nav-wrap .nav-list li {
+    padding: 0;
+    margin: 0 5px;
+  }
+  .footer-wrap .ft-blocks {
+    padding: 20px 0 25px 20px;
+  }
+  .main-footer .footer-nav-wrap {
+    padding: 25px 20px;
+  }
+  .contact-list {
+    padding-right: 20px;
+  }
+  .contact-list li {
+    padding: 0 0 20px 40px;
+  }
+  .follow-block input[type='email'] {
+    min-width: 180px;
+  }
+  .contact-list li .second-number {
+    padding-left: 27px;
+  }
+}

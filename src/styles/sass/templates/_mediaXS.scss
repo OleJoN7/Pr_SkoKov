@@ -1,0 +1,110 @@
+@media (max-width: 767px) {
+  .container {
+    width: 720px;
+  }
+  html {
+    font-size: 14px;
+  }
+  #lightSlider {
+    flex-direction: column;
+    width: 100% !important;
+  }
+  .slider-wrap {
+    display: block;
+    padding: 0;
+    height: auto;
+  }
+  .slider-text h2 {
+    font-size: 1.8rem;
+  }
+  .slider-text p {
+    font-size: 1rem;
+  }
+  .slider-text {
+    padding-top: 60px;
+    text-align: center;
+    @include transform(none);
+  }
+  .slider-text .btn-wrap {
+    text-align: center;
+    padding: 60px 0 20px;
+  }
+  .slider-img-wrap {
+    justify-content: center;
+    padding: 20px 0 20px 20px;
+  }
+  .slider-img-wrap .photo-list {
+    width: auto;
+    height: calc(100% / 4);
+  }
+  .content-list {
+    @include display-flex();
+    @include justify-content(space-around);
+    @include flex-wrap(wrap);
+    padding-bottom: 60px;
+  }
+  .navbar-toggler {
+    font-size: 3rem;
+  }
+  .navbar-toggler-right {
+    top: 2rem;
+  }
+  .main-header .main-nav {
+    padding-top: 10px;
+  }
+  .slider-img-wrap .photo-list li {
+    width: 80px;
+    height: 80px;
+  }
+  .content-list .hover-block .hover-text:after {
+    margin-left: 70px;
+    border-width: 10px;
+  }
+  .clients-slider {
+    padding-bottom: 50px;
+  }
+
+  #clients-slider {
+    width: 100%;
+  }
+
+  .clients-slider li {
+    width: 107px;
+    height: 47px;
+  }
+  .main-footer .footer-nav-wrap .nav-list li {
+    padding: 0;
+    margin: 0 5px;
+  }
+  .follow-block input[type='email']:focus {
+    transform: translateX(-5px) scaleY(1.1);
+  }
+  .footer-wrap {
+    flex-direction: column;
+  }
+  .footer-wrap .ft-blocks {
+    width: 100%;
+    padding: 20px 0 25px 10px;
+  }
+  .main-footer .social-block {
+    display: block !important;
+  }
+  .main-footer .footer-nav-wrap {
+    padding: 25px 20px;
+  }
+  .main-footer .footer-nav-wrap .nav-list {
+    flex-direction: column;
+  }
+  .contact-list {
+    padding-right: 20px;
+  }
+  .contact-list li {
+    padding: 0 0 20px 40px;
+  }
+  .follow-block input[type='email'] {
+    min-width: 180px;
+  }
+  .contact-list li .second-number {
+    padding-left: 27px;
+  }
+}
