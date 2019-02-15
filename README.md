@@ -1,2 +1,3 @@
 # Pr_SkoKov
-# Aother simple landing page project
+
+Aother simple landing page project
