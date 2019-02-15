@@ -1,3 +1,3 @@
 # Pr_SkoKov
 
-Aother simple landing page project
+Another simple landing page project,also used external libraries such as light-slider,masonry
